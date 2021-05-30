@@ -17,7 +17,6 @@
     </style>
 
     <style name="myCustomStyle">
-        <item name="android:textSize">18dp</item>
-        <item name="colorButtonNormal">#FF0000</item>
+        <item name="android:background">#FF0000</item>
     </style>
 </resources>

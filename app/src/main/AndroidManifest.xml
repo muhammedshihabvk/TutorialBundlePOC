@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shabsudemy.slidenerdtutorial">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SlidenerdTutorial">
-        <activity android:name=".CalculatorActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name=".GeneralWidgetsActivity"></activity>
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".BaseAdapterActivity" />
+        <activity android:name=".AdapterPocActivity" />
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".FacebookUIActivity" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:screenOrientation="landscape" />
         <activity android:name=".ManualLayoutGenerationActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".IntentPOCActivity" />
+        <activity
+            android:name=".CustomDialogueActivity"
+            android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

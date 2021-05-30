@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
+        style="@style/myCustomStyle"
         android:id="@+id/intentPOC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,5 +40,54 @@
         android:onClick="onButtonClick"
         android:text="Calculator UI"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/facebookUIActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Facebook Login UI"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/frameLayoutActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Frame Layout POC"
+        android:textAllCaps="false" />
+
+    <Button
+    android:id="@+id/arrayAdapterPocActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onButtonClick"
+    android:text="ArrayAdapter POC"
+    android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/baseAdapterPocActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="BaseAdapter POC"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/gridViewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="GridView POC"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/generalWidgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="general Widgets POC"
+        android:textAllCaps="false" />
+
 
 </LinearLayout>

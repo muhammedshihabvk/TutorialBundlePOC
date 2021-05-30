@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A5FB3"
+    android:id="@+id/facebookUIRelativeLayout"
+    android:padding="20dp"
+    tools:context=".FacebookUIActivity">
+
+
+    <TextView
+        android:typeface="monospace"
+        android:id="@+id/fbMainHeading"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="facebook"
+        android:textColor="#F4F4F4"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fbMainHeading"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailTextView"
+        android:background="@color/white"
+        android:hint="Email" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextEmail"
+        android:text="Password:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/passwordTextView"
+        android:background="@color/white"
+        android:hint="Email" />
+
+    <CheckBox
+        android:id="@+id/saveLoginCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:checked="true"
+        android:text="save login" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="light off"
+        android:textOn="light on"
+        android:background="@color/teal_200"
+        android:layout_below="@id/saveLoginCheckbox"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="Need an account?\n Sign up using your phone"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

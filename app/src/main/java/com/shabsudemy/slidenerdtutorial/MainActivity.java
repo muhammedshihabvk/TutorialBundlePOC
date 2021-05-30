@@ -2,7 +2,9 @@ package com.shabsudemy.slidenerdtutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.strictmode.IntentReceiverLeakedViolation;
 import android.view.View;
+import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     public void onButtonClick(View view) {
@@ -32,6 +33,34 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.calculatorActivity:
                 i = new Intent(this, CalculatorActivity.class);
+                startActivity(i);
+                break;
+            case R.id.facebookUIActivity:
+                i = new Intent(this, FacebookUIActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.frameLayoutActivity:
+                i=new Intent(this, FrameLayoutActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.arrayAdapterPocActivity:
+                i = new Intent(this,AdapterPocActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.baseAdapterPocActivity:
+                i = new Intent(this,BaseAdapterActivity.class);
+                startActivity(i);
+                break;
+
+            case  R.id.gridViewActivity:
+                i=new Intent(this,GridViewActivity.class);
+                startActivity(i);
+                break;
+            case  R.id.generalWidgets:
+                i=new Intent(this,GeneralWidgetsActivity.class);
                 startActivity(i);
                 break;
             default:
